@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import Product from './components/Products';
+import Product from './components/Product';
 import ProductF from './components/ProductF';
-import ProductList from './components/productlist';
+import ProductList from './components/ProductList';
+
 import Timer from './components/Timer';
+
 class App extends Component {
 
 
@@ -15,7 +17,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Timer/>
+
+        <Timer />
+
+        <ProductList />
+
    
         <Product name="HP Laptop" price="10000" avl="true"> </Product>
         <Product name="Samsung Laptop" price="20000" avl="false"> </Product>
@@ -24,10 +30,6 @@ class App extends Component {
 
         <ProductF name="F HP Laptop" price="1" avl="true"> </ProductF>
         <ProductF name="F Samsung Laptop" price="2" avl="false"> </ProductF>
-
-        <hr/>     <br/>
-
-        <ProductList></ProductList>
       </div>
     );
 
